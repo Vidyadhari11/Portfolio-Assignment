@@ -5,7 +5,6 @@ import Contact from "./components/Contact"
 import Projects from "./components/Projects"
 import About from "./components/About"
 import {v4 as uuidv4} from "uuid"
-// import { FaLinkedin } from 'react-icons/fa';
 import './App.css';
 
 class App extends Component{

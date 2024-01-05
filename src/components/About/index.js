@@ -65,7 +65,8 @@ const About=()=>{
                     <button className="button" type="submit">Add</button>
                    </form>
                    </div>
-                 
+                   <img src="https://res.cloudinary.com/dtoiozo4f/image/upload/v1704435138/Screenshot_47_ng901e.png" className="footer-img" alt="footer"/>
+      
                 </div>
             )
         }}
@@ -76,4 +77,3 @@ const About=()=>{
 }
 
 export default About
-/*<img src="https://res.cloudinary.com/dtoiozo4f/image/upload/v1704380959/about_photo_ytqyn7.png" alt="about" className="logo"/>*/

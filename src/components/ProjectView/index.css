@@ -1,21 +1,25 @@
 .project-item{
     display:flex;
     flex-direction:row;
+    justify-content: center;
+    margin-left:20px;
     border-radius: 20px;
     background-color: #ffffff;
     width:90%;
     margin:2px;
+    height:350px;
     box-shadow:0 0 1px rgba(0,0,0,0.2px);
 }
 @media (min-width:768px){
     .project-item{
         width:70vw;
         justify-content: center;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
+        margin-left: 110px;
     }
 }
 .project-image{
-    height:500px;
+    height:100%;
     width:50%;
 }
 .project-details{
@@ -32,7 +36,7 @@
     justify-content: flex-start;
     align-items: center;
     padding:0;
-  
+  width:60%;
 }
 .project-name{
 font-family: Playfair Display;
@@ -47,7 +51,7 @@ padding: 0;
 font-family: Nunito;
 font-size: 18px;
 font-weight: 400;
-width:120px;
+
 letter-spacing: 0em;
 text-align: left;
 padding: 0;
