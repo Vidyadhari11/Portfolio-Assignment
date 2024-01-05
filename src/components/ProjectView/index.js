@@ -9,7 +9,7 @@ const ProjectView =props=>{
                 <div className="project-details-container">
             <p className="project-name">{projectName}</p>
             <p className="description">{description}</p>
-            <a href={projectLink} className="project-link">View Project</a>
+            <a href={projectLink} className="project-link" target="_blank" rel="noreferrer">View Project</a>
           </div>
           </div>
           <img src={image} alt="project" className="project-image"/>
