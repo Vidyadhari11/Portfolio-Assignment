@@ -7,11 +7,14 @@ const About=()=>{
     return(
         <ProjectContext.Consumer>
         {value=>{
-            const {addProject, changeProjectName,changeProjectLink,changeProjectDescription}=value
+            const {addProject, changeProjectName,changeProjectLink,changeProjectDescription,changeImage,projectName,projectLink,description}=value
             const addProjectData=(event)=>{
                 event.preventDefault()
-                console.log("add")
                 addProject()
+                changeProjectName("")
+                changeImage("https://res.cloudinary.com/dtoiozo4f/image/upload/v1704429999/image_bedqt0.png")
+                changeProjectDescription("")
+                changeProjectLink("")
             }
 
             const onChangeProjectName=(event)=>{
@@ -24,6 +27,19 @@ const About=()=>{
 
             const onChangeProjectDescription=(event)=>{
                 changeProjectDescription(event.target.value)
+            }
+
+            const onChangeImage=event=>{
+             
+               const file=event.target.files[0]
+
+                if (file) {
+                    const url = URL.createObjectURL(file);
+                    console.log(url)
+                    changeImage(url);
+                  }else{
+                    changeImage("https://res.cloudinary.com/dtoiozo4f/image/upload/v1704429999/image_bedqt0.png")
+                  }
             }
 
             return(
@@ -52,16 +68,20 @@ const About=()=>{
                    <form className="form-container" onSubmit={addProjectData}>
                     <div className="label-input-container">
                         <label className="label" htmlFor="projectName">Project Name</label>
-                        <input type="text" id="projectName" className="input" onChange={onChangeProjectName}/>
+                        <input type="text" id="projectName" className="input" onChange={onChangeProjectName} value={projectName}/>
                     </div>
                     <div className="label-input-container">
                         <label className="label" htmlFor="projectLink">Project Link</label>
-                        <input type="text" id="projectLink" className="input" onChange={onChangeProjectLink}/>
+                        <input type="text" id="projectLink" className="input" onChange={onChangeProjectLink} value={projectLink}/>
                     </div>
                     <div className="label-input-container">
                         <label className="label" htmlFor="description">Description</label>
-                        <textarea id="description" rows="3" cols="24" className="input" onChange={onChangeProjectDescription}></textarea>
+                        <textarea id="description" rows="3" cols="24" className="input" onChange={onChangeProjectDescription} value={description}></textarea>
                     </div>
+                    <div className="label-input-container">
+                        <label className="label" htmlFor="imageInput">Project Image</label>
+                        <input type="file" id="imageInput" accept="image/*" onChange={onChangeImage}/>
+                          </div>
                     <button className="button" type="submit">Add</button>
                    </form>
                    </div>

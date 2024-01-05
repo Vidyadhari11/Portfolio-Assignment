@@ -8,17 +8,18 @@ import {v4 as uuidv4} from "uuid"
 import './App.css';
 
 class App extends Component{
-  state={projectsList:[],projectName:"",projectLink:"",description:""}
+  state={projectsList:[],projectName:"",projectLink:"",description:"",image:"https://res.cloudinary.com/dtoiozo4f/image/upload/v1704429999/image_bedqt0.png"}
   
   addProject=()=>{
-   const {projectName,projectLink,description}=this.state
+   const {projectName,projectLink,description,image}=this.state
    const project={
     id:uuidv4(),
     projectName,
     projectLink,
-    description
+    description,image
    }
    this.setState(prevState=>({projectsList:[...prevState.projectsList,project]}))
+
   }
 
   changeProjectName=value=>{
@@ -34,11 +35,15 @@ class App extends Component{
     this.setState({description:value})
   }
 
+  changeImage=value=>{
+    this.setState({image:value})
+  }
+
   render(){
-    const {projectLink,projectName,description,projectsList}=this.state
+    const {projectLink,projectName,description,projectsList,image}=this.state
     return (
      
-      <ProjectContext.Provider value={{addProject:this.addProject,projectsList,description,projectName,projectLink,changeProjectDescription:this.changeProjectDescription,changeProjectName:this.changeProjectName,changeProjectLink:this.changeProjectLink}}>
+      <ProjectContext.Provider value={{addProject:this.addProject,changeImage:this.changeImage,image,projectsList,description,projectName,projectLink,changeProjectDescription:this.changeProjectDescription,changeProjectName:this.changeProjectName,changeProjectLink:this.changeProjectLink}}>
       
           <BrowserRouter>
           <Routes>

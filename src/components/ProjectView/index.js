@@ -2,7 +2,7 @@ import "./index.css"
 
 const ProjectView =props=>{
     const {details}=props
-    const {projectName,projectLink,description}=details
+    const {projectName,projectLink,description,image}=details
     return(
         <li className="project-item">
             <div className="project-details">
@@ -12,7 +12,7 @@ const ProjectView =props=>{
             <a href={projectLink} className="project-link">View Project</a>
           </div>
           </div>
-          <img src="https://res.cloudinary.com/dtoiozo4f/image/upload/v1704380959/about_photo_ytqyn7.png" alt="project" className="project-image"/>
+          <img src={image} alt="project" className="project-image"/>
           
         </li>
     )

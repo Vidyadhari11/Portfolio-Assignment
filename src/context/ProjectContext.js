@@ -6,9 +6,11 @@ const ProjectContext =React.createContext({
     projectName:"",
     projectLink:"",
     description:"",
+    image:null,
     changeProjectName:()=>{},
     changeProjectLink:()=>{},
-    changeProjectDescription:()=>{}
+    changeProjectDescription:()=>{},
+    changeImage:()=>{}
 })
 
 export default ProjectContext
