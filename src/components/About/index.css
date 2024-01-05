@@ -1,0 +1,73 @@
+.logo{
+    height:45vh;
+    width:100vw;
+}
+.project-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+align-items: center;
+background-color: lightcyan;
+
+}
+.title{
+font-family: Playfair Display;
+font-size: 48px;
+font-weight: 700;
+line-height: 72px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:30vw;
+    max-height: 1100px;
+
+  }
+  .label-input-container{
+    display: flex;
+    flex-direction: column;
+margin-bottom: 9px;
+width:100%;
+  }
+  .label{
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+
+  }
+  .input{
+    font-family: Nunito;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+border:1px solid lightgrey;
+    padding:3px;
+    border-radius: 5px;
+    outline:none;
+    background: #FFFFFF;
+
+
+  }
+  .button{
+    font-family: Roboto;
+font-size: 18px;
+font-weight: 500;
+line-height: 27px;
+letter-spacing: 0em;
+align-self: flex-end;
+ background: #FDC435;
+    padding:4px;
+    color:#FFFFFF;
+    border-radius: 4px;
+    border: none;
+  }
