@@ -84,9 +84,10 @@ const About=()=>{
                           </div>
                     <button className="button" type="submit">Add</button>
                    </form>
-                   </div>
                    <img src="https://res.cloudinary.com/dtoiozo4f/image/upload/v1704435138/Screenshot_47_ng901e.png" className="footer-img" alt="footer"/>
       
+                   </div>
+                   
                 </div>
             )
         }}
