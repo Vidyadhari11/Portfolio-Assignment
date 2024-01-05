@@ -1,6 +1,6 @@
 .nav-header{
     display: flex;
-    justify-content: flex-start;
+    justify-content:space-around;
     align-items: center;
     background: #F9FAFF;
 }
@@ -13,17 +13,23 @@
     color:black;
     font-family: roboto;
     font-size: 26px;
+    margin-left: 10px;
 }
 .nav-menu {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-self: flex-end;
-    flex: 1;
+   flex-wrap: wrap;
+    justify-content:space-around;
     list-style-type: none;
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+  @media (min-width:768px){
+.nav-menu{
+    align-self: flex-end;
+    justify-content: flex-end;
+    flex: 1;
+}
   }
   .nav-menu-item {
     font-family: 'Roboto';
