@@ -5,7 +5,7 @@ import './index.css'
 const Header = props => {
     return(
         <div className="nav-header">
-            <h1 className="name">Modelyn torf</h1>
+            <h1 className="name">Vidyadhari Belagal</h1>
             <ul className="nav-menu">
                 <li className="nav-menu-item">
                   <Link to="/" className="nav-link">

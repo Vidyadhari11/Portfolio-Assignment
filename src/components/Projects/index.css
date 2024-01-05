@@ -2,7 +2,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-background:lightsteelblue;
+   
+    background: #F9FAFF;
+    
+
 }
 .project-title{
    

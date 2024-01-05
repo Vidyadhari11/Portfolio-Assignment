@@ -2,7 +2,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background-color: lightcyan;
+    background: #F9FAFF;
 }
 @media (min-width:768px){
     .nav-header{
