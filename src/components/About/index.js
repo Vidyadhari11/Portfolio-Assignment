@@ -1,6 +1,7 @@
 import Header from "../../components/Header"
 import ProjectContext from "../../context/ProjectContext"
 
+
 import "./index.css"
 
 const About=()=>{
@@ -54,7 +55,9 @@ const About=()=>{
                              I developed static,responsive and dynamic webpages.
                              </p>
                              <div className="buttons-container">
+                                
                                 <button type="button" className="button-primary">Projects</button>
+                              
                                 <button type="button" className="button-secondary">Linkedin</button>
                              </div>
                              </div>

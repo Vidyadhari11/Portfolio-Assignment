@@ -53,6 +53,7 @@ flex-direction: row;
 }
 .button-primary{
   font-family: Roboto;
+  text-decoration: none;
 font-size: 18px;
 font-weight: 500;
 letter-spacing: 0em;
